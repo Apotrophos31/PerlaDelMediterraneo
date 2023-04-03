@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PerlaDelMediterraneoApplication {
+public class PDMApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(PerlaDelMediterraneoApplication.class, args);
+        SpringApplication.run(PDMApp.class, args);
     }
 
 }
