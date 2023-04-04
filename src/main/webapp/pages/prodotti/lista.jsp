@@ -5,9 +5,10 @@
 <head>
     <title>Prodotti</title>
     <jsp:useBean id="lista_prodotti" scope="request" type="java.util.List<com.example.perladelmediterraneo.model.Prodotti>" />
-    <link rel="stylesheet" type="text/css" href="../assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/styles/main.css">
 </head>
 <body>
+<%@include file="../../components/header.jsp" %>
 <h1>Prodotti - size(${lista_prodotti.size()}):</h1>
 
 <!-- Lista prodotti -->
@@ -70,5 +71,6 @@
 </form>
 <hr>
 
+<%@include file="../../components/footer.jsp" %>
 </body>
 </html>

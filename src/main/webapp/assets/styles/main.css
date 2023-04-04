@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+    font-family: Roboto, serif;
+}
+
 html,
 body {
     margin: 0;
@@ -8,6 +14,73 @@ body {
     justify-content: center;
     width: 100%;
 }
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background: antiquewhite;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+}
+
+header > nav {
+    padding-left: 1rem;
+    width: calc(100vw - 106px - 1rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+header > nav > a {
+    color: black;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+header > nav > a:hover {
+    color: dimgray;
+}
+
+header > nav > a:last-child {
+    margin-left: auto !important;
+}
+
+#logo {
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    width: 106px;
+    height: 51px;
+    margin: 10px;
+    border-radius: 0.4rem;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    background: antiquewhite;
+    border-top: 1px solid lightgray;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer > .left{
+    margin-left:1rem;
+}
+
+footer > .center{
+
+}
+
+footer > .right{
+    margin-right:1rem;
+}
+
 
 form {
     display: flex;
@@ -33,12 +106,12 @@ hr {
     border-radius: 2px;
 }
 
-table{
+table {
     border: 1px solid;
 }
 
 th, td {
     border: 1px solid;
     padding: 1rem;
-    margin:0;
+    margin: 0;
 }
