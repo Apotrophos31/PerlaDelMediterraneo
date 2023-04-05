@@ -12,25 +12,25 @@ public class ProdottiController {
     @Autowired
     private ProdottiService prodottiService;
 
-    @RequestMapping("/prodotti/lista")
+    @RequestMapping("/prodotti")
     public void listaProdotti(Model model) {
         model.addAttribute("lista_prodotti", prodottiService.getProdotti());
     }
 
-    @PostMapping("/prodotti/aggiungi")
+    @PostMapping("/api/aggPrd")
     public String aggiungiProdotti(
             @RequestParam(name = "nome") String nome,
             @RequestParam(name = "prezzo_kg") double prezzo_kg,
             @RequestParam(name = "quantita") int quantita
             ) {
         prodottiService.addProdotti(nome, prezzo_kg, quantita);
-        return "redirect:/prodotti/lista";
+        return "redirect:/prodotti";
     }
 
-    @PostMapping("/prodotti/rimuovi")
+    @PostMapping("/api/rmvPrd")
     public String rimuoviProdotti(@RequestParam(name="id") int id){
         prodottiService.rimuoviProdotti(id);
-        return "redirect:/prodotti/lista";
+        return "redirect:/prodotti";
     }
 
 }

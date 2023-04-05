@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Perla del Mediterraneo</title>
+    <title>Perla del Mediterraneo: Contatti</title>
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../assets/styles/main.css">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/index.css">
 </head>
 <body>
 <div class="container">
     <%@include file="../components/header.jsp" %>
     <div class="content">
-        <h1>La Perla del Mediterraneo S.R.L.</h1>
-        <h2>Freschezza dal 1980</h2>
+        <h1>Contatti</h1>
     </div>
     <%@include file="../components/footer.jsp" %>
 </div>

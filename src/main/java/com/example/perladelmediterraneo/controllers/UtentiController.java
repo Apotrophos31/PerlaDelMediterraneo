@@ -14,7 +14,7 @@ public class UtentiController {
     @Autowired
     UtentiService utentiService;
 
-    @PostMapping("/login/processo")
+    @PostMapping("/api/login")
     public String login(@RequestParam String username, @RequestParam String password){
 
         UtentiService.LoginResponse response = utentiService.validateLogin(username, password);
