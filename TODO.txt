@@ -1,0 +1,12 @@
+- Catalogo
+- Lista prodotti con data tracciata
+- Font Awesome
+- Lista arrivi giornalieri
+- Dashboard amministrativa
+- Autorimozione/spostamento prodotti scaduti/da surgelare
+
+- Tabelle da fare nel database:
+ - CATALOGO
+ - PRODOTTI FRESCHI (ARRIVI)
+ - PRODOTTI DA SURGELARE (NON PIU FRESCHI)
+ - PRODOTTI SURGELATI (SPOSTATI DAI MAGAZZINIERI)
