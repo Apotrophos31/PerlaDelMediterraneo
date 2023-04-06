@@ -1,27 +1,26 @@
 package com.example.perladelmediterraneo.services;
 
-import com.example.perladelmediterraneo.model.Prodotti;
-import com.example.perladelmediterraneo.repositories.ProdottiRepository;
+import com.example.perladelmediterraneo.model.Prodotto;
+import com.example.perladelmediterraneo.repositories.ProdottoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ProdottiService {
+public class ProdottoService {
 
     @Autowired
-    private ProdottiRepository prodottiRepository;
+    private ProdottoRepository prodottiRepository;
 
-    public List<Prodotti> getProdotti() {
+    public List<Prodotto> getListaProdotti() {
         return prodottiRepository.findAll();
     }
 
-    public void addProdotti(String nome, double prezzo_kg, int quantita){
-        Prodotti prodotti = new Prodotti();
+    public void aggiungiProdotto(String nome, double prezzo_kg, int quantita) {
+        Prodotto prodotti = new Prodotto();
 
         prodotti.setNome(nome);
         prodotti.setPrezzo_kg(prezzo_kg);
@@ -36,10 +35,10 @@ public class ProdottiService {
         prodottiRepository.save(prodotti);
     }
 
-    public void rimuoviProdotti(int id){
-        Optional<Prodotti> daRimuovere = prodottiRepository.findById(id);
+    public void rimuoviProdotto(int id) {
+        Optional<Prodotto> daRimuovere = prodottiRepository.findById(id);
 
-        if(daRimuovere.isPresent())
+        if (daRimuovere.isPresent())
             prodottiRepository.delete(daRimuovere.get());
     }
 

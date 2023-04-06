@@ -10,25 +10,27 @@ import java.util.Date;
 @Table(name = "prodotti")
 @Getter
 @Setter
-public class Prodotti {
+public class Prodotto {
 
     @Id
     @GeneratedValue
     private int id;
 
-    @Column(name="nome")
+    @Column(name = "nome")
     private String nome;
 
-    @Column(name="prezzo_kg")
+    @Column(name = "prezzo_kg")
     private double prezzo_kg;
 
-    @Column(name="quantita")
+    @Column(name = "quantita")
     private int quantita;
 
-    @Column(name="arrivo")
+    @Column(name = "arrivo")
+    @Temporal(TemporalType.TIMESTAMP)
     private Date arrivo;
 
-    @Column(name="scadenza")
+    @Column(name = "scadenza")
+    @Temporal(TemporalType.TIMESTAMP)
     private Date scadenza;
 
 }

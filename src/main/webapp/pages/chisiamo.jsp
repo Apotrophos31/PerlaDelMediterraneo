@@ -11,6 +11,7 @@
     <%@include file="../components/header.jsp" %>
     <div class="content">
         <h1>Chi Siamo</h1>
+        <p>boh</p>
     </div>
     <%@include file="../components/footer.jsp" %>
 </div>

@@ -11,6 +11,7 @@
     <%@include file="../components/header.jsp" %>
     <div class="content">
         <h1>Contatti</h1>
+        <p>non siamo rintracciabili</p>
     </div>
     <%@include file="../components/footer.jsp" %>
 </div>

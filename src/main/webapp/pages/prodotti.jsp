@@ -1,4 +1,4 @@
-<%@ page import="com.example.perladelmediterraneo.model.Prodotti" %>
+<%@ page import="com.example.perladelmediterraneo.model.Prodotto" %>
 <%@ page import="java.text.DateFormat" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../assets/styles/main.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/prodotti.css">
-    <jsp:useBean id="lista_prodotti" scope="request" type="java.util.List<com.example.perladelmediterraneo.model.Prodotti>" />
+    <jsp:useBean id="lista_prodotti" scope="request" type="java.util.List<com.example.perladelmediterraneo.model.Prodotto>" />
 </head>
 <body>
 <div class="container">
@@ -28,8 +28,8 @@
                 <th>SCADENZA</th>
             </tr>
 
-            <% DateFormat dateFormat = new SimpleDateFormat("dd MMMM yyyy - hh:mm"); %>
-            <% for (Prodotti p : lista_prodotti) { %>
+            <% DateFormat dateFormat = new SimpleDateFormat("dd MMMM yyyy - HH:mm"); %>
+            <% for (Prodotto p : lista_prodotti) { %>
             <tr>
                 <th><%=p.getId()%>
                 </th>
